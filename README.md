@@ -5,8 +5,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 
 ## Languages and Tools
 
-<div>
-<div style="margin-right:30px;float:left">
+<span align="left">
 <a href="https://www.w3.org/html/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" height="40" alt="html5"style="vertical-align:down;margin:8px;"/></a>
 <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" height="40"style="vertical-align:down;margin:8px;"/></a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://github.com/blackcater/blackcater/raw/main/images/logo-javascript.svg" height="40" alt="javascript"style="vertical-align:down;margin:8px;"/></a>
@@ -16,12 +15,11 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 <a href="https://expressjs.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="mongodb" height="40"style="vertical-align:down;margin:8px;"/></a>
 <a href="https://angular.io/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg" alt="mongodb" height="40"style="vertical-align:down;margin:8px;"/></a>
 <a href="https://nodejs.org/en/" target="_blank"><img src="https://github.com/blackcater/blackcater/raw/main/images/logo-nodejs.svg" height="40" alt="nodejs"style="vertical-align:down;margin:8px;"/></a>
-</div>
+</span>
+
+<br/>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pratikshan04&layout=compact)](https://github.com/pratikshan04/github-readme-stats)
-
-</div>
-
 ## Works published
 
 ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=pratikshan04&repo=frontend-designs&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
