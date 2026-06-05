@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pratiksha M N — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        :root {
+            --bg: #0f1117;
+            --fg: #f5f5f7;
+            --card: #161821;
+            --muted: #a0a3b0;
+            --accent: #e8b96a;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border-color: var(--border);
+            letter-spacing: 0.01em;
+        }
+
+        body {
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.6
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .container {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1.5rem
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(16px);
+            background: rgba(15, 17, 23, 0.75)
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0
+        }
+
+        .nav a {
+            font-size: .875rem;
+            color: var(--muted);
+            transition: color .2s
+        }
+
+        .nav a:hover {
+            color: var(--fg)
+        }
+
+        .nav .brand {
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            font-size: 1.25rem
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            border-radius: 9999px;
+            padding: .5rem 1rem;
+            font-size: .875rem;
+            font-weight: 500;
+            transition: opacity .2s
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #1a1a1a
+        }
+
+        .btn-glass {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08)
+        }
+
+        .hero {
+            padding-top: 6rem;
+            padding-bottom: 8rem
+        }
+
+        .metrics {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem
+        }
+
+        .metric {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid rgba(255, 255, 255, .08);
+            padding: .9rem 1.1rem;
+            border-radius: 14px;
+            backdrop-filter: blur(8px)
+        }
+
+        .metric strong {
+            display: block;
+            font-size: 1.2rem;
+            color: #e8b96a;
+        }
+
+        .tech-pills {
+            display: flex;
+            gap: .5rem;
+            flex-wrap: wrap;
+            margin-top: 1.25rem
+        }
+
+        .tech-pills span {
+            padding: .35rem .75rem;
+            border-radius: 999px;
+            background: rgb(92 61 10 / 8%);
+            border: 1px solid rgba(232, 185, 106, .2);
+            font-size: .8rem;
+            color: #ffffff;
+        }
+
+        .hero h1 {
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            font-size: 4rem;
+            line-height: .95;
+            letter-spacing: -0.05em;
+        }
+
+        .hero h1 span {
+            font-style: italic;
+            background: linear-gradient(105deg, #e3a53c, #bead8f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--muted);
+            max-width: 42rem;
+            margin-top: 1.5rem
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: .25rem .75rem;
+            font-size: .75rem;
+            color: var(--muted);
+            margin-bottom: 2rem
+        }
+
+        .tag .dot {
+            width: .5rem;
+            height: .5rem;
+            border-radius: 9999px;
+            background: var(--accent);
+            animation: pulse 2s infinite
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .4
+            }
+        }
+
+        .actions {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: .75rem
+        }
+
+        .contact-row {
+            margin-top: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: .875rem;
+            color: var(--muted)
+        }
+
+        .contact-row a:hover {
+            color: var(--fg)
+        }
+
+        section {
+            padding: 6rem 0;
+            border-top: 1px solid var(--border)
+        }
+
+        .eyebrow {
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            color: var(--accent);
+            margin-bottom: .75rem
+        }
+
+        h2 {
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            font-size: 3rem;
+            line-height: 1;
+            letter-spacing: -0.02em
+        }
+
+        .grid-2 {
+            display: grid;
+            gap: 2rem
+        }
+
+        .grid-4 {
+            display: grid;
+            gap: 1rem
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: background .2s
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.06)
+        }
+
+        .card .stat {
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            font-size: 3rem;
+            color: var(--accent)
+        }
+
+        .skill-group .group-title {
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--muted);
+            margin-bottom: 1rem
+        }
+
+        .badge {
+            display: inline-block;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: .25rem .75rem;
+            font-size: .875rem;
+            margin: .25rem
+        }
+
+        .timeline {
+            position: relative;
+            border-left: 1px solid rgba(255, 255, 255, 0.12);
+            padding-left: 2rem;
+            margin-left: .75rem
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 3rem
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: .4rem;
+            width: .75rem;
+            height: .75rem;
+            border-radius: 9999px;
+            background: var(--accent);
+            box-shadow: 0 0 12px rgba(232, 185, 106, 0.3)
+        }
+
+        .timeline-item h3 {
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            font-size: 1.5rem
+        }
+
+        .timeline-item .company {
+            color: var(--accent);
+            font-size: .875rem;
+            font-weight: 500;
+            margin: .5rem 0
+        }
+
+        .timeline-item ul {
+            list-style: none;
+            margin-top: 1rem
+        }
+
+        .timeline-item li {
+            display: flex;
+            gap: .75rem;
+            font-size: .875rem;
+            margin: .5rem 0;
+            color: var(--fg)
+        }
+
+        .timeline-item li::before {
+            content: '✦';
+            color: var(--accent);
+            font-size: .75rem;
+            margin-top: .15rem
+        }
+
+        .stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin-top: 1rem
+        }
+
+        .stack span {
+            font-size: .75rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: .25rem .6rem;
+            color: var(--muted)
+        }
+
+        .pdf-wrap {
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: .5rem;
+            box-shadow: 0 0 40px rgba(232, 185, 106, 0.15)
+        }
+
+        .pdf-wrap iframe {
+            width: 100%;
+            height: 85vh;
+            border: none;
+            border-radius: 1rem
+        }
+
+        footer {
+            padding: 3rem 0;
+            border-top: 1px solid var(--border);
+            font-size: .875rem;
+            color: var(--muted)
+        }
+
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem
+        }
+
+        .download-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: .5rem 1rem;
+            font-size: .875rem;
+            color: var(--fg);
+            margin-top: 1.5rem;
+            cursor: pointer
+        }
+
+        .download-hero:hover {
+            background: rgba(255, 255, 255, 0.08)
+        }
+
+        @media(min-width:768px) {
+            .hero h1 {
+                font-size: 4rem
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .grid-4 {
+                grid-template-columns: 1fr 1fr 1fr 1fr
+            }
+
+            .grid-about {
+                grid-template-columns: 1fr 2fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav"><a href="#top" class="brand">Pratiksha<span style="color:var(--accent)">.</span></a>
+                <nav style="display:flex;gap:1.75rem"><a href="#about">About</a><a href="#achievements">Impact</a><a
+                        href="#skills">Skills</a><a href="#experience">Experience</a><a href="#resume">Resume</a></nav>
+            </div>
+        </div>
+    </header>
+    <section class="hero" id="top">
+        <div class="container">
+            <div class="tag"><span class="dot"></span>Open to senior frontend roles</div>
+            <h1>Pratiksha <span>M N&nbsp;</span></h1>
+            <p>Senior Frontend Engineer with <strong>10+ years</strong> shaping enterprise &amp; B2B SaaS products in
+                <strong>EdTech</strong>, <strong>E-commerce</strong>, and <strong>Digital Transformation</strong>.
+            </p>
+            <div class="tech-pills">
+                <span>Angular</span><span>Node.js</span><span>TypeScript</span><span>Architecture</span><span>AI-Augmented
+                    Development</span>
+            </div>
+            <div class="metrics">
+                <div class="metric"><strong>10+</strong>Years</div>
+                <div class="metric"><strong>Enterprise</strong>SaaS</div>
+                <div class="metric"><strong>50+</strong>Institutions</div>
+                <div class="metric"><strong>4+</strong>Engineers Mentored</div>
+            </div>
+            <div class="actions"><a href="#experience" class="btn btn-primary">View experience</a><a href="#resume"
+                    class="btn btn-glass">Preview resume</a></div>
+            <div class="contact-row"><span><svg width=16 height=16 fill=none stroke="currentColor" stroke-width=2
+                        viewBox="0 0 24 24">
+                        <rect x=2 y=4 width=20 height=16 rx=2 />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg> pratikshan04@gmail.com</span><span><svg width=16 height=16 fill=none stroke="currentColor"
+                        stroke-width=2 viewBox="0 0 24 24">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg> +91 97387 14847</span><span><svg width=16 height=16 fill=none stroke="currentColor"
+                        stroke-width=2 viewBox="0 0 24 24">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                        <circle cx=12 cy=10 r=3 />
+                    </svg> Bengaluru / Mysuru</span><a href="https://linkedin.com/in/pratikshan04" target="_blank"><svg
+                        width=16 height=16 fill=none stroke="currentColor" stroke-width=2 viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x=2 y=9 width=4 height=12 />
+                        <circle cx=4 cy=4 r=2 />
+                    </svg> linkedin.com/in/pratikshan04</a></div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container grid-2 grid-about">
+            <div>
+                <p class="eyebrow">About</p>
+                <h2>A decade of frontend craft.</h2>
+            </div>
+            <div style="font-size:1.125rem;color:var(--muted);display:flex;flex-direction:column;gap:1.25rem">
+                <p>I build and scale enterprise and B2B SaaS products with a focus on <strong
+                        style="color:var(--fg)">Angular, TypeScript, and JavaScript</strong>. My work spans frontend
+                    architecture, microfrontends, performance, accessibility, and design systems.</p>
+                <p>I lead technical initiatives, mentor engineers, and collaborate across global product teams to ship
+                    scalable, high-quality user experiences — backed by REST APIs, cloud (AWS/Azure), and modern CI/CD.
+                </p>
+                <p>I leverage AI-assisted tools — <strong style="color:var(--fg)">GitHub Copilot, Cursor, GPT,
+                        Claude</strong> — to accelerate development, improve code quality, and raise engineering
+                    productivity.</p>
+            </div>
+        </div>
+    </section>
+    <section id="achievements">
+        <div class="container">
+            <p class="eyebrow">Impact</p>
+            <h2 style="margin-bottom:3rem">Numbers that ship.</h2>
+            <div class="grid-4">
+                <div class="card"><svg width=24 height=24 fill=none stroke="currentColor" stroke-width=2
+                        viewBox="0 0 24 24" style="color:var(--accent);margin-bottom:1rem">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                    </svg>
+                    <div class="stat">40%</div>
+                    <p style="font-size:.875rem;color:var(--muted)">Faster page loads via lazy loading &amp; critical
+                        CSS</p>
+                </div>
+                <div class="card"><svg width=24 height=24 fill=none stroke="currentColor" stroke-width=2
+                        viewBox="0 0 24 24" style="color:var(--accent);margin-bottom:1rem">
+                        <path
+                            d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                        <path
+                            d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                    </svg>
+                    <div class="stat">30%</div>
+                    <p style="font-size:.875rem;color:var(--muted)">Fewer UI inconsistencies with Neon Framework
+                        adoption</p>
+                </div>
+                <div class="card"><svg width=24 height=24 fill=none stroke="currentColor" stroke-width=2
+                        viewBox="0 0 24 24" style="color:var(--accent);margin-bottom:1rem">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    <div class="stat">P0</div>
+                    <p style="font-size:.875rem;color:var(--muted)">Resolved multiple production incidents end-to-end
+                    </p>
+                </div>
+                <div class="card"><svg width=24 height=24 fill=none stroke="currentColor" stroke-width=2
+                        viewBox="0 0 24 24" style="color:var(--accent);margin-bottom:1rem">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx=9 cy=7 r=4 />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                    <div class="stat">4+</div>
+                    <p style="font-size:.875rem;color:var(--muted)">Junior engineers mentored &amp; onboarded</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <p class="eyebrow">Skills</p>
+            <h2 style="margin-bottom:3rem">Core skills.</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="group-title">Frontend</div><span class="badge">Angular</span><span
+                        class="badge">Vue.js</span><span class="badge">TypeScript</span><span
+                        class="badge">JavaScript</span><span class="badge">RxJS</span><span
+                        class="badge">HTML5</span><span class="badge">CSS3</span><span class="badge">SCSS</span>
+                </div>
+                <div class="card">
+                    <div class="group-title">Architecture</div><span class="badge">Microfrontends</span><span
+                        class="badge">Design Systems</span><span class="badge">Component Libraries</span><span
+                        class="badge">Performance Optimisation</span>
+                </div>
+                <div class="card">
+                    <div class="group-title">Backend &amp; Data</div><span class="badge">Node.js</span><span
+                        class="badge">REST APIs</span><span class="badge">MongoDB</span><span class="badge">MEAN
+                        Stack</span>
+                </div>
+                <div class="card">
+                    <div class="group-title">Cloud &amp; DevOps</div><span class="badge">AWS (EC2, S3)</span><span
+                        class="badge">Azure</span><span class="badge">Jenkins</span><span class="badge">GitHub
+                        Actions</span><span class="badge">CI/CD</span>
+                </div>
+                <div class="card">
+                    <div class="group-title">AI Tooling</div><span class="badge">GitHub Copilot</span><span
+                        class="badge">Cursor</span><span class="badge">OpenAI GPT</span><span
+                        class="badge">Claude</span>
+                </div>
+                <div class="card">
+                    <div class="group-title">Quality</div><span class="badge">Accessibility</span><span
+                        class="badge">Unit Testing</span><span class="badge">Code Reviews</span><span
+                        class="badge">Mentoring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="container">
+            <p class="eyebrow">Experience</p>
+            <h2 style="margin-bottom:3rem">Experience timeline.</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3>Software Engineer II</h3>
+                        <p class="company">PowerSchool · Bengaluru</p>
+                        <p style="font-size:.875rem;color:var(--muted);margin-bottom:.5rem">Dec 2021 — Present ·
+                            Full-stack engineering on Document Management, digitising school documents across 50+ K-12
+                            institutions.</p>
+                        <ul>
+                            <li>Architected the PowerSchool Neon UI Framework as a reusable component library — 30%
+                                fewer UI inconsistencies.</li>
+                            <li>Designed a new job-creation workflow that significantly reduced clicks and improved
+                                admin productivity.</li>
+                            <li>Hardened role-based access control and record display logic.</li>
+                            <li>Led root-cause analysis on P0 incidents using Kibana and Chrome DevTools.</li>
+                            <li>Optimised OAuth 2.0 / JWT auth flows for cross-browser performance.</li>
+                            <li>Drove deployments via Jenkins and GitHub Actions with rollback strategies.</li>
+                        </ul>
+                        <div class="stack">
+                            <span>Angular</span><span>TypeScript</span><span>MongoDB</span><span>MEAN</span><span>Kibana</span><span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3>Senior Web Developer</h3>
+                        <p class="company">Unilog Content Solutions · Mysuru</p>
+                        <p style="font-size:.875rem;color:var(--muted);margin-bottom:.5rem">Oct 2021 — Dec 2021 · Global
+                            B2B SaaS e-commerce and product data platform.</p>
+                        <ul>
+                            <li>Boosted page load speed by 40% via lazy loading, asset optimisation, and critical CSS.
+                            </li>
+                            <li>Mentored 4+ junior developers and raised coding standards across teams.</li>
+                            <li>Initiated peer-review culture; improved unit test coverage and cut bugs by 30%.</li>
+                            <li>Led design-system contributions for consistency across SaaS projects.</li>
+                        </ul>
+                        <div class="stack"><span>Angular</span><span>TypeScript</span><span>Design Systems</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3>Web Developer</h3>
+                        <p class="company">Unilog Content Solutions · Mysuru</p>
+                        <p style="font-size:.875rem;color:var(--muted);margin-bottom:.5rem">Oct 2018 — Oct 2021 ·
+                            Full-cycle frontend for B2B e-commerce SaaS products.</p>
+                        <ul>
+                            <li>Delivered Angular-based frontends integrated with REST APIs.</li>
+                            <li>Improved Lighthouse performance scores by 20% via compression, async scripts, bundle
+                                analysis.</li>
+                            <li>Built reusable Angular components and form modules reused across projects.</li>
+                            <li>Contributed to SEO optimisation, improving conversion and ranking metrics.</li>
+                        </ul>
+                        <div class="stack"><span>Angular</span><span>REST</span><span>SEO</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3>Senior Software Engineer</h3>
+                        <p class="company">Unvired Software India · Bengaluru</p>
+                        <p style="font-size:.875rem;color:var(--muted);margin-bottom:.5rem">Jul 2017 — Oct 2018 ·
+                            Digital transformation products for global enterprises.</p>
+                        <ul>
+                            <li>Built real-time chatbot UIs and cross-platform apps in Angular, Node.js, Ionic.</li>
+                            <li>Developed AI-driven tools integrating Google Assistant and Salesforce Chatter APIs.</li>
+                            <li>Championed component-based architecture with reusable modules.</li>
+                            <li>Reduced app boot time via aggressive lazy loading and code splitting.</li>
+                        </ul>
+                        <div class="stack"><span>Angular</span><span>Node.js</span><span>Ionic</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3>Software Engineer</h3>
+                        <p class="company">Unvired Software India · Bengaluru</p>
+                        <p style="font-size:.875rem;color:var(--muted);margin-bottom:.5rem">Jul 2015 — Jul 2017 ·
+                            In-house chatbot platform and enterprise messaging integrations.</p>
+                        <ul>
+                            <li>Built a chatbot platform with real-time messaging across Facebook, Workplace, Microsoft
+                                Lync.</li>
+                            <li>Modular, plugin-based architecture with localisation and adaptive layouts.</li>
+                            <li>Automated build/deployment, cutting manual effort by 50%.</li>
+                            <li>Built desktop applications using ElectronJS.</li>
+                        </ul>
+                        <div class="stack"><span>Angular</span><span>ElectronJS</span><span>Node.js</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <p class="eyebrow">Education</p>
+            <h2 style="margin-bottom:3rem">Foundations.</h2>
+            <div class="card" style="display:flex;align-items:flex-start;gap:1.25rem">
+                <div style="border-radius:.75rem;background:rgba(232,185,106,0.15);padding:.75rem"><svg width=24
+                        height=24 fill=none stroke="currentColor" stroke-width=2 viewBox="0 0 24 24"
+                        style="color:var(--accent)">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+                    </svg></div>
+                <div>
+                    <h3 style="font-family:'Monaco','Menlo','Courier New',monospace;font-size:1.5rem">B.E. — Information Science &amp;
+                        Engineering</h3>
+                    <p style="color:var(--muted);margin-top:.25rem">Visvesvaraya Technological University, Belagavi</p>
+                    <p style="font-size:.875rem;color:var(--accent);margin-top:.25rem">2011 — 2015</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="container">
+            <div
+                style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:3rem">
+                <div>
+                    <p class="eyebrow">Resume</p>
+                    <h2>View resume.</h2>
+                    <p style="color:var(--muted);margin-top:.75rem">Preview the full PDF below or download a copy.</p>
+                </div>
+                <div style="display:flex;gap:.75rem"><a
+                        href="https://drive.google.com/file/d/1tBFhuSJG_oF4KBRdsT10FQgtsLRsYJO7/view" target="_blank"
+                        class="btn btn-glass">Open in new tab</a><a
+                        href="https://drive.google.com/uc?export=download&id=1tBFhuSJG_oF4KBRdsT10FQgtsLRsYJO7"
+                        class="btn btn-primary">
+                        Download
+                    </a>
+                </div>
+            </div>
+            <div class="pdf-wrap">
+                <iframe src="https://drive.google.com/file/d/1tBFhuSJG_oF4KBRdsT10FQgtsLRsYJO7/preview" title="Resume"
+                    loading="lazy" allow="autoplay">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>2025 Pratiksha M N. Crafted with care.</p>
+            <div style="display:flex;gap:1rem"><a href="mailto:pratikshan04@gmail.com">Email</a><a
+                    href="https://linkedin.com/in/pratikshan04" target="_blank">LinkedIn</a><a
+                    href="pratiksha-resume.pdf">Resume</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
