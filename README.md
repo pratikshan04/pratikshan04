@@ -1,29 +1,77 @@
-<h1>Hi I'm Pratiksha! <img
-src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" /></h1>
+# 👋 Hi, I'm Pratiksha M N
 
-[![Linkedin: pratikshan04](https://img.shields.io/badge/-pratikshan04-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/pratikshan04/)](https://www.linkedin.com/in/pratikshan04/)
+Senior Frontend Engineer with 10+ years of experience building enterprise and B2B SaaS applications across EdTech, E-commerce, and Digital Transformation.
 
-## Languages and Tools
+I specialize in Angular, TypeScript, Frontend Architecture, and Micro Frontends, with a focus on building scalable, maintainable, and high-performance user experiences.
 
-<span align="left">
-<a href="https://www.w3.org/html/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" height="40" alt="html5"style="vertical-align:down;margin:8px;"/></a>
-<a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" height="40"style="vertical-align:down;margin:8px;"/></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://github.com/blackcater/blackcater/raw/main/images/logo-javascript.svg" height="40" alt="javascript"style="vertical-align:down;margin:8px;"/></a>
-<a href="https://www.typescriptlang.org/" target="_blank"><img src="https://github.com/blackcater/blackcater/raw/main/images/logo-typescript.svg" height="40" alt="typescript"style="vertical-align:down;margin:8px;"/></a>
-<br/>
-<a href="https://www.mongodb.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" height="40"style="vertical-align:down;margin:8px;"/></a>
-<a href="https://expressjs.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="mongodb" height="40"style="vertical-align:down;margin:8px;"/></a>
-<a href="https://angular.io/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg" alt="mongodb" height="40"style="vertical-align:down;margin:8px;"/></a>
-<a href="https://nodejs.org/en/" target="_blank"><img src="https://github.com/blackcater/blackcater/raw/main/images/logo-nodejs.svg" height="40" alt="nodejs"style="vertical-align:down;margin:8px;"/></a>
-</span>
+---
 
-<br/>
+## 🚀 Expertise
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pratikshan04&layout=compact)](https://github.com/pratikshan04/github-readme-stats)
-## Works published
+- Angular
+- TypeScript
+- JavaScript
+- Frontend Architecture
+- Micro Frontends
+- Node.js
+- Design Systems
+- AI Engineering
 
-![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=pratikshan04&repo=frontend-designs&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
+---
 
-## GitHub Stats
+## 💼 Experience Highlights
 
-[![Pratiksha's GitHub stats](https://github-readme-stats.vercel.app/api?username=pratikshan04&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)](https://github.com/pratikshan04/github-readme-stats)
+- 10+ years in software engineering
+- Enterprise SaaS product development
+- Frontend architecture and scalable application design
+- Micro Frontend implementations
+- Performance optimization and modernization initiatives
+- Mentoring and technical leadership
+- Full-stack development with Node.js and MongoDB
+- Cloud experience across AWS and Azure
+
+---
+
+## 📈 Impact
+
+- Improved page load performance by up to 40%
+- Supported document management solutions used across 50+ institutions
+- Built reusable UI frameworks and component libraries
+- Reduced UI inconsistencies through design system adoption
+- Resolved critical production incidents through end-to-end root cause analysis
+- Mentored and onboarded junior engineers
+
+---
+
+## 🎯 Currently Focused On
+
+- Frontend System Design
+- AI Engineering
+- Cloud Technologies
+- Technical Leadership
+
+---
+
+## 🛠 Tech Stack
+
+`Angular` • `TypeScript` • `JavaScript` • `Node.js` • `MongoDB` • `AWS` • `Azure` • `Micro Frontends` • `CI/CD`
+
+---
+
+## 📫 Connect
+
+- LinkedIn: www.linkedin.com/in/pratikshan04
+- Portfolio: https://pratikshan04.netlify.app
+- Email: pratikshan04@gmail.com
+
+---
+
+> Build. Learn. Repeat.
+
+```javascript
+while (alive) {
+  learn();
+  build();
+  grow();
+}
+```
